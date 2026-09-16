@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-09-15T04:22:33.890624+00:00",
+  "fresh_repeat_identical_files": 25,
+  "fresh_repeat_all_file_hashes_equal": true,
+  "fault_tests_passed": 7,
+  "fault_tests": [
+    "unmodified control",
+    "one digital sample changed",
+    "event onset shifted by 1/160 s",
+    "event duration increased by 1/160 s",
+    "execution mislabeled as imagery",
+    "wrong original event code",
+    "channel metadata reordered"
+  ],
+  "commands": [
+    "python -B test_verify.py",
+    "python -B convert.py --output bids-repeat"
+  ]
+}

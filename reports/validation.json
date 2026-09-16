@@ -1,0 +1,128 @@
+{
+  "checked_at_utc": "2026-09-15T04:20:22.088308+00:00",
+  "output": "<project-root>/bids",
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "mne": "1.13.0",
+  "mne_bids": "0.19.0",
+  "numpy": "2.5.3",
+  "runs": [
+    {
+      "run": "01",
+      "task": "eyesopen",
+      "channels": 64,
+      "sfreq_hz": 160.0,
+      "samples_per_channel": 9760,
+      "duration_s": 61.0,
+      "events_source": 1,
+      "events_bids": 1,
+      "event_counts": {
+        "T0": 1
+      },
+      "max_signal_diff_v": 0.0,
+      "max_onset_diff_s": 0.0,
+      "max_duration_diff_s": 0.0,
+      "annotation_end_s": 60.2,
+      "only_edf_labels_changed": true,
+      "source_sha256": "4743b736131a7e147c150e8b37711029b6cda5e356c4b3e8261a03cdcaaf8b0c",
+      "output_sha256": "c3f73e2eb0eba791be60e83925497d3a4ce3ae5a37d89b01d11e184b67bbec67"
+    },
+    {
+      "run": "02",
+      "task": "eyesclosed",
+      "channels": 64,
+      "sfreq_hz": 160.0,
+      "samples_per_channel": 9760,
+      "duration_s": 61.0,
+      "events_source": 1,
+      "events_bids": 1,
+      "event_counts": {
+        "T0": 1
+      },
+      "max_signal_diff_v": 0.0,
+      "max_onset_diff_s": 0.0,
+      "max_duration_diff_s": 0.0,
+      "annotation_end_s": 60.2,
+      "only_edf_labels_changed": true,
+      "source_sha256": "31a95e0a880e6c3d89960d9d62c144f24cc4e9f5d7e93c7f864ef61cd49e847e",
+      "output_sha256": "e00a9daf84418261cfff1faaa0638e1e8b096d9dd06db4649606bd26c1da6301"
+    },
+    {
+      "run": "03",
+      "task": "execution",
+      "channels": 64,
+      "sfreq_hz": 160.0,
+      "samples_per_channel": 20000,
+      "duration_s": 125.0,
+      "events_source": 30,
+      "events_bids": 30,
+      "event_counts": {
+        "T0": 15,
+        "T2": 7,
+        "T1": 8
+      },
+      "max_signal_diff_v": 0.0,
+      "max_onset_diff_s": 0.0,
+      "max_duration_diff_s": 0.0,
+      "annotation_end_s": 124.5,
+      "only_edf_labels_changed": true,
+      "source_sha256": "3427c8d01bff1380bc9ab9f27a35ece2af5dfadf3e291bbc05eb66e4dadbfe2e",
+      "output_sha256": "f069451425c08b81fe01268eef777b9c65b2ff3031d59893c39eff3aca7d180b"
+    },
+    {
+      "run": "04",
+      "task": "imagery",
+      "channels": 64,
+      "sfreq_hz": 160.0,
+      "samples_per_channel": 20000,
+      "duration_s": 125.0,
+      "events_source": 30,
+      "events_bids": 30,
+      "event_counts": {
+        "T0": 15,
+        "T2": 7,
+        "T1": 8
+      },
+      "max_signal_diff_v": 0.0,
+      "max_onset_diff_s": 0.0,
+      "max_duration_diff_s": 0.0,
+      "annotation_end_s": 124.5,
+      "only_edf_labels_changed": true,
+      "source_sha256": "3d161f88e1c00632585287d2ce584c2bc0f08862438eb255ea8723e00fac693d",
+      "output_sha256": "4b07841de750f34a2253d3aaf2c8cace1c7f89b8339e0daa65a486ab29f79265"
+    }
+  ],
+  "validator": {
+    "command": [
+      "<user-home>/.bun/bin/bunx",
+      "--bun",
+      "bids-validator@1.15.0",
+      "<project-root>/bids",
+      "--json"
+    ],
+    "returncode": 0,
+    "errors": [],
+    "warnings": [
+      {
+        "key": "NO_AUTHORS",
+        "severity": "warning",
+        "reason": "The Authors field of dataset_description.json should contain an array of fields - with one author per field. This was triggered because there are no authors, which will make DOI registration from dataset metadata impossible.",
+        "files": [
+          {
+            "key": "NO_AUTHORS",
+            "code": 113,
+            "file": null,
+            "line": null,
+            "character": null,
+            "severity": "warning",
+            "reason": "The Authors field of dataset_description.json should contain an array of fields - with one author per field. This was triggered because there are no authors, which will make DOI registration from dataset metadata impossible.",
+            "helpUrl": "https://neurostars.org/search?q=NO_AUTHORS"
+          }
+        ],
+        "additionalFileCount": 0,
+        "helpUrl": "https://neurostars.org/search?q=NO_AUTHORS",
+        "code": 113
+      }
+    ]
+  },
+  "python_warnings": []
+}

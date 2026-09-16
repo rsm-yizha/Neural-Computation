@@ -1,0 +1,13 @@
+# Source and generated EEG data stay outside version control.
+raw/
+bids/
+bids-*/
+run-reports/
+*-validation/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+*.zip
